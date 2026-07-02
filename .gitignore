@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large / regenerable artifacts (optional to keep)
+models/*.joblib
+
+# Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
