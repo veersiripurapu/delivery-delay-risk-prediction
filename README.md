@@ -3,7 +3,7 @@
 Predict, at dispatch time, whether a delivery route will finish late — so operations
 can act *before* the delay happens instead of reporting it *after*.
 
-> **Status:** Phase 1 (business design) complete · synthetic dataset generated and
+> Status: Phase 1 (business design) complete · synthetic dataset generated and
 > validated (12,000 routes, 25% delay rate, baseline model AUC ≈ 0.84 on a
 > time-based holdout).
 
@@ -79,7 +79,7 @@ delay. It is a single config value (`DELAY_THRESHOLD_MIN`) and easy to sensitivi
 - **Primary:** Gradient Boosting / Random Forest (captures the nonlinear interactions —
   e.g. high stops *and* high traffic *and* a new driver compounding)
 - **Split:** chronological, not random — train on the earliest ~80% of routes, test on
-  the latest ~20%, mirroring real deployment (train on history, score tomorrow)
+  the latest -20%, mirroring real deployment (train on history, score tomorrow)
 
 ## 8. Evaluation (beyond accuracy)
 
@@ -109,10 +109,10 @@ delivery-delay-risk-prediction/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   ├── raw/                 # delivery_routes.csv lands here
+│   ├── raw/                 # delivery_routes.csv 
 │   └── processed/
 ├── src/
-│   ├── data_generation.py   # leakage-safe synthetic generator  ← provided
+│   ├── data_generation.py   # leakage-safe synthetic generator  
 │   ├── preprocessing.py
 │   ├── train_model.py
 │   └── score_routes.py
@@ -141,8 +141,8 @@ In training code, enforce the leakage contract:
 ```python
 import data_generation as dg
 df = dg.generate()
-train, test = dg.time_split(df, train_frac=0.8)   # chronological
-X_train = train[dg.FEATURE_COLUMNS]               # features only — no actuals
+train, test = dg.time_split(df, train_frac=0.8)  
+X_train = train[dg.FEATURE_COLUMNS]              
 y_train = train[dg.TARGET_COLUMN]
 ```
 
