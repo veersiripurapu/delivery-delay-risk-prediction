@@ -1,0 +1,2 @@
+Model Name,ROC-AUC,Precision,Recall,F1 Score,Selected Threshold,% Routes Flagged,False-Negative Cost Ratio,Model Version,Training Period,Test Period,Generated Timestamp
+Gradient Boosting Classifier,0.838,0.51,0.788,0.619,0.21,0.403,3:1,v1.0,2025-01-01 to 2025-10-17,2025-10-17 to 2025-12-31,2026-07-02 00:12
