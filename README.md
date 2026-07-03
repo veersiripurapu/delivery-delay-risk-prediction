@@ -13,13 +13,13 @@ An end-to-end machine-learning project: leakage-safe data engineering → featur
 *Executive Summary - how much risk exists and where it's concentrated.*
 ![Executive Summary](Screenshots/Delivery%20Delay%20Risk%20-%20Summary.png)
 
-*Model Performance & Governance — how the model performed and what its limits are.*
+*Model Performance & Governance - how the model performed and what its limits are.*
 ![Model Performance & Governance](Screenshots/Model%20Performance%20.png)
 ---
 
 ## Results at a glance
 
-Gradient Boosting classifier, evaluated on a chronological hold-out (train on the earliest ~80% of routes, test on the latest ~20% — a 2,400-route test set):
+Gradient Boosting classifier, evaluated on a chronological hold-out (train on the earliest ~80% of routes, test on the latest ~20% - a 2,400-route test set):
 
 | Metric | Value |
 |---|---|
@@ -45,7 +45,7 @@ The model caught 493 of 626 delayed routes (~79%), and about 51% of its alerts c
 
 ## 1. Business problem
 
-Delivery operations typically discover route delays *after* they occur — a customer calls, a receiving window is missed, a service escalation lands on someone's desk. That is reactive. This project moves the decision earlier: score every route at departure, flag the high-risk ones, and let dispatch, warehouse, and customer service intervene while it still matters.
+Delivery operations typically discover route delays *after* they occur - a customer calls, a receiving window is missed, a service escalation lands on someone's desk. That is reactive. This project moves the decision earlier: score every route at departure, flag the high-risk ones, and let dispatch, warehouse, and customer service intervene while it still matters.
 
 ## 2. Objective
 
