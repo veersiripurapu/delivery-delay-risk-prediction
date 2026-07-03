@@ -1,6 +1,6 @@
 # Delivery Delay Risk Prediction
 
-**Predict, at route departure, whether a delivery route will finish late — so operations can intervene before the final delay occurs instead of reporting it afterward.**
+**Predict, at route departure, whether a delivery route will finish late - so operations can intervene before the final delay occurs instead of reporting it afterward.**
 
 An end-to-end machine-learning project: leakage-safe data engineering → feature engineering → modeling with cost-based threshold selection and SHAP explainability → batch scoring → a four-page Power BI operations dashboard.
 
