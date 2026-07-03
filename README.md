@@ -11,11 +11,10 @@ An end-to-end machine-learning project: leakage-safe data engineering → featur
 ## Dashboard preview
 
 *Executive Summary — how much risk exists and where it's concentrated.*
-![Executive Summary](Screenshots/executive_summary.png)
+![Executive Summary](Screenshots/Delivery%20Delay%20Risk%20-%20Summary.png)
 
 *Model Performance & Governance — how the model performed and what its limits are.*
-![Model Performance & Governance](Screenshots/model_governance.png)
-
+![Model Performance & Governance](Screenshots/Model%20Performance%20.png)
 ---
 
 ## Results at a glance
