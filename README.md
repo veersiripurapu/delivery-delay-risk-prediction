@@ -7,6 +7,9 @@ An end-to-end machine-learning project: leakage-safe data engineering → featur
 > **Status:** Complete (v1). Python pipeline + Power BI dashboard. Databricks/MLflow productionization is the planned v2 (see Roadmap).
 
 ---
+## Architecture
+
+![End-to-end architecture](Screenshots/Delivery%20delay%20risk%20architecture.png)
 
 ## Dashboard preview
 
